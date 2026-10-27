@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karka AI & Tech Academy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b12;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #12121c;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      color: #c084fc;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #f472b6;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: radial-gradient(circle at top, #38205d, #0b0b12 65%);
+    }
+
+    .hero h1 {
+      font-size: clamp(35px, 6vw, 65px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #c084fc;
+    }
+
+    .hero p {
+      color: #d1d1dc;
+      max-width: 650px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #7c3aed, #ec4899);
+      color: white;
+      padding: 13px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+
+    .stats, .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .stat, .card {
+      background: #171720;
+      border: 1px solid #30303d;
+      border-radius: 16px;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .stat h3 {
+      color: #c084fc;
+      font-size: 30px;
+    }
+
+    .card h3 {
+      color: #f0abfc;
+      margin-bottom: 10px;
+    }
+
+    .card p, .stat p {
+      color: #c5c5d0;
+    }
+
+    .pap {
+      text-align: center;
+      background: #171220;
+      border-radius: 20px;
+      padding: 45px 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #12121c;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 14px;
+      }
+
+      section {
+        padding: 45px 6%;
+      }
+    }
+    /* Premium Glass Effect */
+.card,
+article.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(196, 181, 253, 0.18);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.card:hover,
+article.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(196, 181, 253, 0.65);
+  box-shadow: 0 12px 35px rgba(124, 58, 237, 0.22);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  article.card {
+    transition: none;
+  }
+}
+
+/* Premium Button Glow */
+.btn,
+button {
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease,
+              filter 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.3);
+}
+
+.btn:focus-visible,
+button:focus-visible {
+  outline: 2px solid #c4b5fd;
+  outline-offset: 4px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">KARKA AI</div>
+    <nav>
+      <a href="#tracks">Tracks</a>
+      <a href="#projects">Projects</a>
+      <a href="#placement">Placements</a>
+      <a href="#join">Join Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Build Skills.<br>Build Projects.<br><span class="highlight">Build Your Career.</span></h1>
+      <p>Learn technology, create real-world projects, and prepare for your future career with Karka AI & Tech Academy.</p>
+      <a class="btn" href="#tracks">Explore Courses →</a>
+    </section>
+
+    <section>
+      <div class="stats">
+        <div class="stat"><h3>10K+</h3><p>Learners</p></div>
+        <div class="stat"><h3>50+</h3><p>Practice Projects</p></div>
+        <div class="stat"><h3>100+</h3><p>Career Opportunities</p></div>
+      </div>
+    </section>
+
+    <section id="tracks">
+      <h2>Explore Career Tracks</h2>
+      <div class="cards">
+        <div class="card"><h3>🤖 AI & Machine Learning</h3><p>Explore intelligent systems and AI fundamentals.</p></div>
+        <div class="card"><h3>💻 Full Stack Development</h3><p>Learn to build modern websites and web applications.</p></div>
+        <div class="card"><h3>🔐 Cyber Security</h3><p>Understand digital security and safe computing.</p></div>
+        <div class="card"><h3>📊 Data Analytics</h3><p>Turn data into useful insights and decisions.</p></div>
+        <div class="card"><h3>🎨 UI/UX Design</h3><p>Create useful, accessible digital experiences.</p></div>
+        <div class="card"><h3>📱 Digital Marketing</h3><p>Learn online branding and digital promotion.</p></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Learn by Building</h2>
+      <div class="cards">
+        <div class="card"><h3>Real-World Projects</h3><p>Practice your skills through hands-on project work.</p></div>
+        <div class="card"><h3>Career Preparation</h3><p>Build your portfolio and prepare for opportunities.</p></div>
+        <div class="card"><h3>Practical Learning</h3><p>Connect technology concepts with real applications.</p></div>
+      </div>
+    </section>
+
+    <section id="placement">
+      <div class="pap">
+        <h2>Learn Now. Pay After Placement.</h2>
+        <p>Explore the Pay After Placement model and check the academy's official eligibility, terms, and conditions.</p>
+        <br>
+        <a class="btn" href="https://karka.academy/" target="_blank" rel="noopener noreferrer">Visit Official Website</a>
+      </div>
+    </section>
+
+    <section id="join">
+      <h2>Ready to Start Your Journey?</h2>
+      <p style="text-align:center; margin-bottom:25px;">Explore the available programs and take your next step in technology.</p>
+      
+
+<p style="text-align:center;">
+  <button class="btn" type="button"
+    onclick="document.getElementById('registration-form').style.display='block'; document.getElementById('registration-form').scrollIntoView({behavior:'smooth'});">
+    Join Now →
+  </button>
+</p>
+
+<div id="registration-form" style="display:none; max-width:600px; margin:30px auto; padding:28px; background:#171720; border:1px solid #7c3aed; border-radius:16px;">
+  <h2 style="text-align:center;">Student Registration</h2>
+  <p style="text-align:center;">Start your tech journey with Karka Academy.</p>
+
+  <form onsubmit="event.preventDefault(); alert('Form demo submitted! Connect a backend to receive registrations.');">
+    <label for="student-name">Full Name</label>
+    <input id="student-name" type="text" placeholder="Enter your full name" required style="display:block; width:100%; box-sizing:border-box; margin:8px 0 18px; padding:12px; border-radius:8px;">
+
+    <label for="student-email">Email Address</label>
+    <input id="student-email" type="email" placeholder="Enter your email" required style="display:block; width:100%; box-sizing:border-box; margin:8px 0 18px; padding:12px; border-radius:8px;">
+
+    <label for="student-phone">Phone Number</label>
+    <input id="student-phone" type="tel" placeholder="Enter your phone number" required style="display:block; width:100%; box-sizing:border-box; margin:8px 0 18px; padding:12px; border-radius:8px;">
+
+    <label for="student-course">Interested Course</label>
+    <select id="student-course" required style="display:block; width:100%; box-sizing:border-box; margin:8px 0 22px; padding:12px; border-radius:8px;">
+      <option value="">Choose a course</option>
+      <option>Full Stack Development</option>
+      <option>AI & Machine Learning</option>
+      <option>Cyber Security</option>
+      <option>Data Analytics</option>
+      <option>UI/UX Design</option>
+      <option>Digital Marketing</option>
+    </select>
+
+    <button class="btn" type="submit">Submit Registration</button>
+  </form>
+</div>
+
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Karka AI & Tech Academy — Learning for the Future
+  </footer>
+</body>
+</html>
